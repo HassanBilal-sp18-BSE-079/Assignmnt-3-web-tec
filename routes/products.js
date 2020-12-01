@@ -5,6 +5,7 @@ var Product = require("../DBmodles/productModel");
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
+  //console.log(req.session.user);
   let products= await Product.find();
   res.render('products/productList',{products});
 });
