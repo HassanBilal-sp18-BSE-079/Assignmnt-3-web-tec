@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-mongoose.connect("mongodb://localhost/productscrud",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
+mongoose.connect("mongodb+srv://hassanBilal:hassan@cluster1.ab09b.mongodb.net/test?authSource=admin&replicaSet=atlas-xfg92j-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
   console.log("Connection to mongoDB Successfull");
 }).catch((err)=>{
 console.log("Connection error");

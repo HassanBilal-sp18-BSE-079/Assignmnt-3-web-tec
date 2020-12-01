@@ -1,7 +1,7 @@
 const cookieParser = require('cookie-parser');
 var express = require('express');
 var router = express.Router();
-var Product = require("../DBmodles/productModel");
+var {Product} = require("../DBmodles/productModel");
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
